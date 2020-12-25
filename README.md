@@ -2,7 +2,7 @@
 My Windows Terminal settings configuration.
 
 ## Requirements
-+ Powershell core
++ Powershell core 7
 + Linux Wsl
 + Python 3.9
 + Vim
