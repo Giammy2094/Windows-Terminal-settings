@@ -3,7 +3,7 @@ My Windows Terminal settings configuration.
 
 ## Requirements
 + Powershell core 7
-+ Linux WSL
++ A WSL (I use Ubuntu LTR 20.04)
 + Python 3.9
 + Vim 8.2
 
