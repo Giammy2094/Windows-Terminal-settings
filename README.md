@@ -10,4 +10,4 @@ My Windows Terminal settings configuration.
 
 ## Notes
 
-Python icon is in the installation directory, Vim one should be added manually downloading it and pointing at it in the Windows Terminal setting file.
+Python icon is in the installation directory, Vim and Ghc ones should be added manually downloading and pointing at them in the Windows Terminal setting file.
