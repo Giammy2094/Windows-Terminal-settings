@@ -6,59 +6,63 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+	"$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+	"defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
-    // You can add more global application settings here.
-    // To learn more about global settings, visit https://aka.ms/terminal-global-settings
+	// You can add more global application settings here.
+	// To learn more about global settings, visit https://aka.ms/terminal-global-settings
 
-    // If enabled, selections are automatically copied to your clipboard.
-    "copyOnSelect": false,
+	// If enabled, selections are automatically copied to your clipboard.
+	"copyOnSelect": false,
 
-    // If enabled, formatted data is also copied to your clipboard
-    "copyFormatting": false,
+	// If enabled, formatted data is also copied to your clipboard
+	"copyFormatting": false,
 
-    // A profile specifies a command to execute paired with information about how it should look and feel.
-    // Each one of them will appear in the 'New Tab' dropdown,
-    //   and can be invoked from the commandline with `wt.exe -p xxx`
-    // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
-    "profiles":
-    {
-        "defaults":
-        {
-            // Put settings here that you want to apply to all profiles.
-        },
-        "list":
-        [
-            {
-                // Make changes here to the powershell.exe profile.
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "Windows PowerShell",
-                "commandline": "powershell.exe",
+	// A profile specifies a command to execute paired with information about how it should look and feel.
+	// Each one of them will appear in the 'New Tab' dropdown,
+	//   and can be invoked from the commandline with `wt.exe -p xxx`
+	// To learn more about profiles, visit https://aka.ms/terminal-profile-settings
+	"profiles":
+	{
+		"defaults":
+		{
+			// Put settings here that you want to apply to all profiles.
+		},
+		"list":
+		[
+			{
+				// Make changes here to the powershell.exe profile.
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"name": "Windows PowerShell",
+				"commandline": "powershell.exe",
 				"fontFace": "Cascadia Code PL",
-                "hidden": false,
+				"hidden": false,
 				"fontSize": 14, 
-				"cursorShape": "filledBox"
-            },
-            {
-                // Make changes here to the cmd.exe profile.
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "name": "Command Prompt",
-                "commandline": "cmd.exe",
-                "hidden": false
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
+				"cursorShape": "filledBox",
+				"colorScheme" : "Gruvbox-Material Medium Dark"
+			},
+			{
+				// Make changes here to the cmd.exe profile.
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"name": "Command Prompt",
+				"commandline": "cmd.exe",
+				"hidden": false,
+				"colorScheme" : "Gruvbox-Material Medium Dark"
+			},
+			{
+				"guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+				"hidden": false,
+				"name": "Ubuntu",
+				"source": "Windows.Terminal.Wsl",
 				"fontFace": "Cascadia Code PL",
-				"fontSize": 14 
-            },
+				"fontSize": 14, 
+				"cursorShape": "filledBox",
+				"colorScheme" : "Gruvbox-Material Medium Dark"
+			},
 			{
 				"commandline" : "C:/Program Files/Vim/vim82/vim.exe",
-				"cursorShape" : "bar",
+				"cursorShape" : "filledBox",
 				"fontFace" : "Cascadia Code PL",
 				"fontSize" : 14,
 				"guid" : "{17930869-63ff-4e5e-abe8-1f04e0f3273f}",
@@ -67,12 +71,25 @@
 				"name" : "Vim",
 				"padding" : "0, 0, 0, 0",
 				"snapOnInput" : true,
+				"startingDirectory" : "%USERPROFILE%"
+			},
+			{
+				"commandline" : "ghci.exe",
+				"cursorShape" : "filledBox",
+				"fontFace" : "Cascadia Code PL",
+				"fontSize" : 14,
+				"guid" : "{b470d5c6-b580-4ca5-b79a-50ca92d822cf}",
+				"historySize" : 9001,
+				"icon" : "C:/Users/giamm/Immagini/Icons/logo.png",
+				"name" : "Haskell",
+				"padding" : "0, 0, 0, 0",
+				"snapOnInput" : true,
 				"startingDirectory" : "%USERPROFILE%",
-				"useAcrylic" : true
+				"colorScheme" : "Gruvbox-Material Medium Dark"
 			},
 			{
 				"commandline" : "py.exe",
-				"cursorShape" : "bar",
+				"cursorShape" : "filledBox",
 				"fontFace" : "Cascadia Code PL",
 				"fontSize" : 14,
 				"guid" : "{1850e97f-16dc-4281-9ea9-0100c4e852c5}",
@@ -82,48 +99,198 @@
 				"padding" : "0, 0, 0, 0",
 				"snapOnInput" : true,
 				"startingDirectory" : "%USERPROFILE%",
-				"useAcrylic" : true
+				"colorScheme" : "Gruvbox-Material Medium Dark"
 			},
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore",
+			{
+				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+				"hidden": false,
+				"name": "Azure Cloud Shell",
+				"source": "Windows.Terminal.Azure"
+			},
+			{
+				"guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+				"hidden": false,
+				"name": "PowerShell",
+				"source": "Windows.Terminal.PowershellCore",
 				"fontFace": "Cascadia Code PL",
+				"padding" : "15, 15, 15, 15",
 				"fontSize": 14, 
-				"cursorShape": "filledBox"
-            }
-        ]
-    },
+				"cursorShape": "filledBox",
+				"colorScheme" : "Gruvbox-Material Medium Dark"
+			}
+		]
+	},
 
-    // Add custom color schemes to this array.
-    // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-    "schemes": [],
+	// Add custom color schemes to this array.
+	// To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
+	"schemes": [
+			{
+				"name" : "Gruvbox-Material Hard Dark",
+				"background" : "#1d2021",
+				"black" : "#665C54",
+				"blue" : "#7DAEA3",
+				"brightBlack" : "#928374",
+				"brightBlue" : "#7DAEA3",
+				"brightCyan" : "#89B482",
+				"brightGreen" : "#A9B665",
+				"brightPurple" : "#D3869B",
+				"brightRed" : "#EA6962",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#D8A657",
+				"cyan" : "#89B482",
+				"foreground" : "#D4BE98",
+				"green" : "#A9B665",
+				"purple" : "#D3869B",
+				"red" : "#EA6962",
+				"white" : "#D4BE98",
+				"yellow" : "#D8A657"
+			},
+			{
+				"name" : "Gruvbox-Material Medium Dark",
+				"background" : "#282828",
+				"black" : "#665C54",
+				"blue" : "#7DAEA3",
+				"brightBlack" : "#928374",
+				"brightBlue" : "#7DAEA3",
+				"brightCyan" : "#89B482",
+				"brightGreen" : "#A9B665",
+				"brightPurple" : "#D3869B",
+				"brightRed" : "#EA6962",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#D8A657",
+				"cyan" : "#89B482",
+				"foreground" : "#D4BE98",
+				"green" : "#A9B665",
+				"purple" : "#D3869B",
+				"red" : "#EA6962",
+				"white" : "#D4BE98",
+				"yellow" : "#D8A657"
+			},
+			{
+				"name" : "Gruvbox-Material Soft Dark",
+				"background" : "#32302F",
+				"black" : "#665C54",
+				"blue" : "#7DAEA3",
+				"brightBlack" : "#928374",
+				"brightBlue" : "#7DAEA3",
+				"brightCyan" : "#89B482",
+				"brightGreen" : "#A9B665",
+				"brightPurple" : "#D3869B",
+				"brightRed" : "#EA6962",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#D8A657",
+				"cyan" : "#89B482",
+				"foreground" : "#D4BE98",
+				"green" : "#A9B665",
+				"purple" : "#D3869B",
+				"red" : "#EA6962",
+				"white" : "#D4BE98",
+				"yellow" : "#D8A657"
+			},
+			{
+				"name" : "Gruvbox-Material Hard Light",
+				"background" : "#F9F5D7",
+				"black" : "#504945",
+				"blue" : "#45707A",
+				"brightBlack" : "#504945",
+				"brightBlue" : "#45707A",
+				"brightCyan" : "#4C7A5D",
+				"brightGreen" : "#6C782E",
+				"brightPurple" : "#945E80",
+				"brightRed" : "#C14A4A",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#B47109",
+				"cyan" : "#4C7A5D",
+				"foreground" : "#654735",
+				"green" : "#6C782E",
+				"purple" : "#945E80",
+				"red" : "#C14A4A",
+				"white" : "#D4BE98",
+				"yellow" : "#B47109"
+			},
+			{
+				"name" : "Gruvbox-Material Medium Light",
+				"green" : "#6C782E",
+				"background" : "#fbf1c7",
+				"black" : "#504945",
+				"blue" : "#45707A",
+				"brightBlack" : "#504945",
+				"brightBlue" : "#45707A",
+				"brightCyan" : "#4C7A5D",
+				"brightGreen" : "#6C782E",
+				"brightPurple" : "#945E80",
+				"brightRed" : "#C14A4A",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#B47109",
+				"cyan" : "#4C7A5D",
+				"foreground" : "#654735",
+				"purple" : "#945E80",
+				"red" : "#C14A4A",
+				"white" : "#D4BE98",
+				"yellow" : "#B47109"
+			},
+			{
+				"name" : "Gruvbox-Material Soft Light",
+				"background" : "#F2E5BC",
+				"black" : "#504945",
+				"blue" : "#45707A",
+				"brightBlack" : "#504945",
+				"brightBlue" : "#45707A",
+				"brightCyan" : "#4C7A5D",
+				"brightGreen" : "#6C782E",
+				"brightPurple" : "#945E80",
+				"brightRed" : "#C14A4A",
+				"brightWhite" : "#D4BE98",
+				"brightYellow" : "#B47109",
+				"cyan" : "#4C7A5D",
+				"foreground" : "#654735",
+				"green" : "#6C782E",
+				"purple" : "#945E80",
+				"red" : "#C14A4A",
+				"white" : "#D4BE98",
+				"yellow" : "#B47109"
+			},
+			{
+				"name": "Gruvbox Dark",
+				"background" : "#282828",
+				"black" : "#282828",
+				"blue" : "#458588",
+				"brightBlack" : "#928374",
+				"brightBlue" : "#83A598",
+				"brightCyan" : "#8EC07C",
+				"brightGreen" : "#B8BB26",
+				"brightPurple" : "#D3869B",
+				"brightRed" : "#FB4934",
+				"brightWhite" : "#EBDBB2",
+				"brightYellow" : "#FABD2F",
+				"cyan" : "#689D6A",
+				"foreground" : "#EBDBB2",
+				"green" : "#98971A",
+				"purple" : "#B16286",
+				"red" : "#CC241D",
+				"white" : "#A89984",
+				"yellow" : "#D79921"
+			}
+		],
 
-    // Add custom actions and keybindings to this array.
-    // To unbind a key combination from your defaults.json, set the command to "unbound".
-    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
-    "actions":
-    [
-        // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-        // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-        // To learn more about selection, visit https://aka.ms/terminal-selection
-        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-        { "command": "paste", "keys": "ctrl+v" },
+		// Add custom actions and keybindings to this array.
+		// To unbind a key combination from your defaults.json, set the command to "unbound".
+		// To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+		"actions":
+		[
+			// Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+			// These two lines additionally bind them to Ctrl+C and Ctrl+V.
+			// To learn more about selection, visit https://aka.ms/terminal-selection
+			{ "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+			{ "command": "paste", "keys": "ctrl+v" },
 
-        // Press Ctrl+Shift+F to open the search box
-        { "command": "find", "keys": "ctrl+shift+f" },
+			// Press Ctrl+Shift+F to open the search box
+			{ "command": "find", "keys": "ctrl+shift+f" },
 
-        // Press Alt+Shift+D to open a new pane.
-        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-        // To learn more about panes, visit https://aka.ms/terminal-panes
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
-    ]
+			// Press Alt+Shift+D to open a new pane.
+			// - "split": "auto" makes this pane open in the direction that provides the most surface area.
+			// - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+			// To learn more about panes, visit https://aka.ms/terminal-panes
+			{ "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+		]
 }
