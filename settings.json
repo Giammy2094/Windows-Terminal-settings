@@ -61,7 +61,7 @@
 				"colorScheme" : "Nord" 
 			},
 			{
-				"commandline" : "C:/Program Files/Vim/vim82/vim.exe",
+				"commandline" : "C:/tools/Vim/vim82/vim.exe",
 				"cursorShape" : "filledBox",
 				"fontFace" : "Cascadia Code PL",
 				"fontSize" : 14,
