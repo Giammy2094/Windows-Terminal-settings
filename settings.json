@@ -28,6 +28,10 @@
 		"defaults":
 		{
 			// Put settings here that you want to apply to all profiles.
+			"backgroundImage" : "C:/Users/giamm/Immagini/Boba Fett color scheme/394105.jpg",
+			"colorScheme": "Boba Fett Dark",
+			"useAcrylic": true, 
+			"acrylicOpacity": 0.5
 		},
 		"list":
 		[
@@ -39,16 +43,14 @@
 				"fontFace": "Cascadia Code PL",
 				"hidden": false,
 				"fontSize": 14, 
-				"cursorShape": "filledBox",
-				"colorScheme" : "Nord"
+				"cursorShape": "filledBox"
 			},
 			{
 				// Make changes here to the cmd.exe profile.
 				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
 				"name": "Command Prompt",
 				"commandline": "cmd.exe",
-				"hidden": false,
-				"colorScheme" : "Nord" 
+				"hidden": false
 			},
 			{
 				"guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -57,8 +59,7 @@
 				"source": "Windows.Terminal.Wsl",
 				"fontFace": "Cascadia Code PL",
 				"fontSize": 14, 
-				"cursorShape": "filledBox",
-				"colorScheme" : "Nord" 
+				"cursorShape": "filledBox"
 			},
 			{
 				"commandline" : "C:/tools/Vim/vim82/vim.exe",
@@ -74,20 +75,6 @@
 				"startingDirectory" : "%USERPROFILE%"
 			},
 			{
-				"commandline" : "ghci.exe",
-				"cursorShape" : "filledBox",
-				"fontFace" : "Cascadia Code PL",
-				"fontSize" : 14,
-				"guid" : "{b470d5c6-b580-4ca5-b79a-50ca92d822cf}",
-				"historySize" : 9001,
-				"icon" : "C:/Users/giamm/Immagini/Icons/logo.png",
-				"name" : "Haskell",
-				"padding" : "0, 0, 0, 0",
-				"snapOnInput" : true,
-				"startingDirectory" : "%USERPROFILE%",
-				"colorScheme" : "Nord" 
-			},
-			{
 				"commandline" : "py.exe",
 				"cursorShape" : "filledBox",
 				"fontFace" : "Cascadia Code PL",
@@ -98,8 +85,7 @@
 				"name" : "Python",
 				"padding" : "0, 0, 0, 0",
 				"snapOnInput" : true,
-				"startingDirectory" : "%USERPROFILE%",
-				"colorScheme" : "Nord"
+				"startingDirectory" : "%USERPROFILE%"
 			},
 			{
 				"guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -115,8 +101,7 @@
 				"fontFace": "Cascadia Code PL",
 				"padding" : "15, 15, 15, 15",
 				"fontSize": 14, 
-				"cursorShape": "filledBox",
-				"colorScheme" : "Nord"
+				"cursorShape": "filledBox"
 			}
 		]
 	},
@@ -291,7 +276,30 @@
 				"red" : "#CC241D",
 				"white" : "#A89984",
 				"yellow" : "#D79921"
+			},
+			{
+				"name": "Boba Fett Dark",
+				"background":"#6B897D",
+				"cursorColor": "#4F1E22",
+				"black" : "#282828",
+				"blue" : "#6B897D",
+				"green": "#123A31",
+				"brightBlue" : "#6B897D",
+				"foreground" : "#5C7444",
+				"brightGreen" : "#5C7444",
+				"red" : "#4F1E22",
+				"white" : "#A89984",
+				"yellow" : "#AE8F3C",
+				"brightYellow" : "#FABD2F",
+				"brightBlack" : "#928374",
+				"brightCyan" : "#8EC07C",
+				"brightPurple" : "#D3869B",
+				"brightRed" : "#FB4934",
+				"brightWhite" : "#AE8F3C",
+				"cyan" : "#689D6A",
+				"purple" : "#B16286"
 			}
+
 		],
 
 		// Add custom actions and keybindings to this array.
