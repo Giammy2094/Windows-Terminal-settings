@@ -6,7 +6,6 @@ My Windows Terminal settings configuration.
 + A WSL (I use Ubuntu LTR 20.04)
 + Python 3.9
 + Vim 8.2
-+ Ghc 8.10 (Haskell compiler)
 
 ## Notes
 
