@@ -289,13 +289,13 @@
 				"brightGreen" : "#5C7444",
 				"red" : "#4F1E22",
 				"white" : "#A89984",
-				"yellow" : "#AE8F3C",
+				"yellow" : "#BC9A2E",
 				"brightYellow" : "#FABD2F",
-				"brightBlack" : "#928374",
+				"brightBlack" : "#000000",
 				"brightCyan" : "#8EC07C",
 				"brightPurple" : "#990000",
 				"brightRed" : "#FB4934",
-				"brightWhite" : "#AE8F3C",
+				"brightWhite" : "#93A675",
 				"cyan" : "#689D6A",
 				"purple" : "#9E2B6A"
 			}
