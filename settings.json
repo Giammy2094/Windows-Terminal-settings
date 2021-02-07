@@ -62,7 +62,7 @@
 				"cursorShape": "filledBox"
 			},
 			{
-				"commandline" : "C:/tools/Vim/vim82/vim.exe",
+				"commandline" : "C:/tools/vim/vim82/vim.exe",
 				"cursorShape" : "filledBox",
 				"fontFace" : "Cascadia Code PL",
 				"fontSize" : 14,
@@ -279,10 +279,10 @@
 			},
 			{
 				"name": "Boba Fett Dark",
-				"background":"#6B897D",
-				"cursorColor": "#4F1E22",
+				"background":"#282828",
+				"cursorColor": "#990000",
 				"black" : "#282828",
-				"blue" : "#6B897D",
+				"blue" : "#458588",
 				"green": "#123A31",
 				"brightBlue" : "#6B897D",
 				"foreground" : "#5C7444",
@@ -293,11 +293,11 @@
 				"brightYellow" : "#FABD2F",
 				"brightBlack" : "#928374",
 				"brightCyan" : "#8EC07C",
-				"brightPurple" : "#D3869B",
+				"brightPurple" : "#990000",
 				"brightRed" : "#FB4934",
 				"brightWhite" : "#AE8F3C",
 				"cyan" : "#689D6A",
-				"purple" : "#B16286"
+				"purple" : "#9E2B6A"
 			}
 
 		],
